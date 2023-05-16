@@ -1,0 +1,85 @@
+
+.container{
+    max-width:120rem;
+    margin: 0 auto;
+    
+}
+
+/* headings */
+
+.primary-heading{
+    font-size: 7.4rem;
+}
+.secondary-heading{
+    font-size: 4.2rem;
+    color: #cb5b0b;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.grid--2--cols{
+    grid-template-columns: repeat(2,1fr);
+}
+.grid--3--cols{
+    grid-template-columns: repeat(3,1fr);
+    column-gap:5rem ;
+}
+
+.grid--4--cols{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.digonal-swipe{
+    display:inline-block;
+    color:rgb(255, 255, 255);
+    text-transform:uppercase;
+    text-decoration:none;
+    outline:3px solid rgb(255, 255, 255);
+    padding:1rem 2rem ;
+    font-size:2rem;
+    font-weight:bold;
+    position:relative;
+    transition:all 1s;
+    z-index: 1;
+    overflow:hidden;
+     
+}
+.digonal-swipe:hover{
+  color:#1c0ae6;
+  /* outline-color: #2b8a3e; */
+}
+.digonal-swipe::before{
+  content:'';
+   position:absolute;
+    height:100%;
+    width:0%;
+    top:0;
+    left:-50px;
+    transform:skewX(45deg);
+    background-color:white;
+    z-index:-1;
+    transition:all 1s;
+}
+.digonal-swipe:hover::before{
+  width:160%;
+}
+
+/* btn */
+.btn:link,.btn:visited{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #e57308;
+    padding:0.7rem 1rem ;
+    color: #f30606;text-transform: uppercase;
+transition: all 0.3s;
+}
+.btn:hover,.btn:active{
+    color: #0712e0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}

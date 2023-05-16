@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+}
+
+.hero-section {
+    padding: 16rem 3.2rem 0 3.2rem;
+    color: white;
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('classroom.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 8rem;
+    padding: 0 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 4rem 12rem; */
+    transition: all 0.3s;
+     
+}
+.nav-logo{
+    font-family: "Script Bold Italic";
+    font-size: 4.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.nav-items{
+    list-style: none;
+}
+.nav-items a:link,.nav-items a:visited{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+
+}
+.nav-active{
+z-index: 1000;
+    background:linear-gradient(rgba(220, 127, 7, 0.8),rgba(225, 79, 6, 0.8));    backdrop-filter: blur(10px);
+
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+
+/* mobilenav bar */
+.btn-mobile-nav{
+    border: none;
+    cursor: pointer;
+    background: none;
+    display: none;
+}
+.icon-mobile-nav[name=close-outline]{
+    display: none;
+}
+.icon-mobile-nav{
+    height: 4.8rem;
+    width: 4.8rem;
+    color: white;
+}
+
+/* .content{
+    position: absolute;
+    margin-top: 14rem;
+
+} */
+.sub-hero-heading {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+
+}
+
+.hero-head {
+    margin-bottom: 2.4rem;
+
+}
+
+.hero-head span {
+    color: #14f1eaf5;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.hero-content {
+
+    font-size: 1.8rem;
+    max-width: 50rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 4.2rem;
+}
+
+.section-places {
+    padding: 9.6rem 0;
+    background-color: #ebfbee;
+}
+
+.places {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+
+
+
+}
+
+.grid-items {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    align-items: center;
+    justify-content: center;
+    column-gap: 10rem;
+    row-gap: 5rem;
+}
+
+.grid-item {
+    box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.grid-item div {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+
+}
+
+.card-content {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #cb5b0b;
+    margin-bottom: 1rem;
+}
+
+.section-info {
+    padding: 9.6rem 0;
+
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.info-image {
+    width: 100%;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+
+}
+
+.info-image:hover {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.info-content {
+    padding: 5rem 5rem;
+}
+
+.text {
+
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+}
+
+.info-description {
+    align-self: center;
+    max-width: 50rem;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: black;
+    margin-bottom: 2rem;
+
+}
+
+
+
+.section-social {
+    padding: 9.6rem 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.social-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 3.2rem 3.2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+}
+
+.social-heading {
+    text-transform: uppercase;
+    font-size: 6rem !important;
+    /* text-align: center;for mobile */
+}
+
+.social-images img {
+    width: 100%;
+}
+
+.social-btn {
+    font-size: 2.4rem !important;
+    border-radius: 3rem;
+}
+
+.social-btn:hover {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2) !important;
+}
+
+
+.section-subscribe {
+    padding: 12rem 0;
+    background-color: #e4650a;
+    color: white;
+}
+
+.subs-heading {
+    color: white !important;
+    font-size: 5.2rem !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    margin-bottom: 4rem;
+    letter-spacing: -1px;
+}
+
+.subs-cont {
+    padding: 3.2rem 3.2rem;
+}
+
+.subs-content {
+    line-height: 1.5;
+    width: 60%;
+    font-size: 1.8rem;
+
+}
+
+
+.subs-form label {
+    font-size: 1.6rem;
+    display: block;
+    color: white;
+    margin-bottom: 1rem;
+
+}
+
+.subs-email {
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.subs-btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 3rem;
+}
+
+.sec-footer {
+    padding: 3.2rem 3.2rem;
+}
+
+.section-footer {
+    padding: 12rem 0;
+
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: #cb5b0b;
+    /* grid-column: 1/3; */
+    align-self: start;
+}
+
+.contact {
+    justify-self: end;
+
+}
+
+.contact-item {
+    list-style: none;
+
+}
+
+.contact-items a:link,
+.contact-items a:visited {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    color: #cb5b0b;
+
+}
+
+.contact-items a:hover,
+.contact-items:active {
+    color: #230cf3;
+}
+
+.about {
+    justify-self: end;
+    align-self: start;
+}
+
+.about a:link,
+.about a:visited {
+    display: block;
+    color: #cb5b0b;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+
+}
+
+.about a:hover,
+.about a:active {
+    color: #230cf3;
+}
+
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: blue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
